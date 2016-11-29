@@ -41,6 +41,13 @@ MUTE_USERS=ABCanG1015
 $ slack_twitter_egosa .env
 ```
 
+## 編集したソースで起動
+
+```bash
+$ bundle install --path vendor/bundle
+$ bundle exec ruby -e "require './lib/slack_twitter_egosa.rb'; SlackTwitterEgosa.run('.env')"
+```
+
 ## Dockerを使って起動
 
 ```bash
